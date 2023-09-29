@@ -12,5 +12,5 @@ categories = ["network-programming", "cryptography"]
 exclude = ["/admin/"]
 
 [dependencies]
-ring = "0.16.20"
-untrusted = "0.7.0"
+ring = { package = "ring-wasi", git = "https://github.com/jedisct1/ring-wasi", branch = "0.16.20" }
+untrusted = "0.7.0" # stick with the version that's used by current ring
